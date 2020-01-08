@@ -1,0 +1,4 @@
+
+target ‘Player’  do
+    pod ‘Masonry’
+end
