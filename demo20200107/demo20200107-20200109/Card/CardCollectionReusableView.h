@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CardCollectionReusableView : UICollectionReusableView
-
+-(void) setViewTitle:(NSString*) title;
 @end
 
 NS_ASSUME_NONNULL_END
