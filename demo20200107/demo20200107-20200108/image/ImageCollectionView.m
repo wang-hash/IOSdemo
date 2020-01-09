@@ -30,9 +30,9 @@
     layout.minimumLineSpacing = 10;
     layout.minimumInteritemSpacing = 10;
     layout.itemSize = CGSizeMake(self.view.bounds.size.width, 300);
-    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, (self.view.bounds.size.height-300)/2, self.view.bounds.size.width, 300) collectionViewLayout:layout];
-//     _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
-    _collectionView.backgroundColor = [UIColor whiteColor];
+//    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, (self.view.bounds.size.height-300)/2, self.view.bounds.size.width, 300) collectionViewLayout:layout];
+     _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+//    _collectionView.backgroundColor = [UIColor whiteColor];
 //    _collectionView.backgroundColor = [UIColor redColor];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;

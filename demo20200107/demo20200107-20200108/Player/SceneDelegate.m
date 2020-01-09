@@ -1,6 +1,7 @@
 #import "SceneDelegate.h"
 #import "ViewController.h"
 #import "ImageCollectionView.h"
+#import "CardViewController.h"
 
 @interface SceneDelegate ()
 
@@ -12,8 +13,9 @@
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
     self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     
-    ImageCollectionView *viewController = [[ImageCollectionView alloc] init];
-    self.window.backgroundColor = [UIColor whiteColor];
+//    ImageCollectionView *viewController = [[ImageCollectionView alloc] init];
+//    self.window.backgroundColor = [UIColor whiteColor];
+    CardViewController *viewController = [[CardViewController alloc] init];
     self.window.rootViewController = viewController;
     
     [self.window makeKeyAndVisible];

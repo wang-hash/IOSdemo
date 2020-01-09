@@ -11,6 +11,9 @@
 		410E3F3623C5738300549F94 /* Video.png in Resources */ = {isa = PBXBuildFile; fileRef = 410E3F3523C5738300549F94 /* Video.png */; };
 		410E3F3923C573B400549F94 /* ImageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410E3F3823C573B400549F94 /* ImageCollectionView.m */; };
 		410E3F3C23C579DC00549F94 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 410E3F3B23C579DC00549F94 /* ImageCell.m */; };
+		410E3F4423C5B46100549F94 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410E3F4323C5B46100549F94 /* CardViewController.m */; };
+		410E3F4723C5B53A00549F94 /* CardViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 410E3F4623C5B53A00549F94 /* CardViewLayout.m */; };
+		4124AE5B23C6BE3B005333DD /* CardCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4124AE5A23C6BE3B005333DD /* CardCollectionReusableView.m */; };
 		4132E23123C3559A0017F94F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4132E23023C3559A0017F94F /* AppDelegate.m */; };
 		4132E23423C3559A0017F94F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4132E23323C3559A0017F94F /* SceneDelegate.m */; };
 		4132E23723C3559A0017F94F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4132E23623C3559A0017F94F /* ViewController.m */; };
@@ -30,6 +33,12 @@
 		410E3F3823C573B400549F94 /* ImageCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionView.m; sourceTree = "<group>"; };
 		410E3F3A23C579DC00549F94 /* ImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
 		410E3F3B23C579DC00549F94 /* ImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		410E3F4223C5B46100549F94 /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		410E3F4323C5B46100549F94 /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
+		410E3F4523C5B53A00549F94 /* CardViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardViewLayout.h; sourceTree = "<group>"; };
+		410E3F4623C5B53A00549F94 /* CardViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewLayout.m; sourceTree = "<group>"; };
+		4124AE5923C6BE3B005333DD /* CardCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardCollectionReusableView.h; sourceTree = "<group>"; };
+		4124AE5A23C6BE3B005333DD /* CardCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardCollectionReusableView.m; sourceTree = "<group>"; };
 		4132E22C23C3559A0017F94F /* Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4132E22F23C3559A0017F94F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4132E23023C3559A0017F94F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,9 +67,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410E3F3D23C5B3BB00549F94 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				410E3F3723C573B400549F94 /* ImageCollectionView.h */,
+				410E3F3823C573B400549F94 /* ImageCollectionView.m */,
+				410E3F3A23C579DC00549F94 /* ImageCell.h */,
+				410E3F3B23C579DC00549F94 /* ImageCell.m */,
+				410414EA23C4B3E600140FDF /* LabelView.h */,
+				410414EB23C4B3E600140FDF /* LabelView.m */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		410E3F4123C5B42E00549F94 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				410E3F4223C5B46100549F94 /* CardViewController.h */,
+				410E3F4323C5B46100549F94 /* CardViewController.m */,
+				4124AE5923C6BE3B005333DD /* CardCollectionReusableView.h */,
+				4124AE5A23C6BE3B005333DD /* CardCollectionReusableView.m */,
+				410E3F4523C5B53A00549F94 /* CardViewLayout.h */,
+				410E3F4623C5B53A00549F94 /* CardViewLayout.m */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		4132E22323C3559A0017F94F = {
 			isa = PBXGroup;
 			children = (
+				410E3F4123C5B42E00549F94 /* Card */,
+				410E3F3D23C5B3BB00549F94 /* image */,
 				4132E22E23C3559A0017F94F /* Player */,
 				4132E22D23C3559A0017F94F /* Products */,
 				E46494B342F3C8ACEF0E129B /* Pods */,
@@ -85,12 +122,6 @@
 				4132E23323C3559A0017F94F /* SceneDelegate.m */,
 				4132E23523C3559A0017F94F /* ViewController.h */,
 				4132E23623C3559A0017F94F /* ViewController.m */,
-				410E3F3723C573B400549F94 /* ImageCollectionView.h */,
-				410E3F3823C573B400549F94 /* ImageCollectionView.m */,
-				410E3F3A23C579DC00549F94 /* ImageCell.h */,
-				410E3F3B23C579DC00549F94 /* ImageCell.m */,
-				410414EA23C4B3E600140FDF /* LabelView.h */,
-				410414EB23C4B3E600140FDF /* LabelView.m */,
 				4132E23823C3559A0017F94F /* Main.storyboard */,
 				4132E23B23C3559B0017F94F /* Assets.xcassets */,
 				4132E23D23C3559B0017F94F /* LaunchScreen.storyboard */,
@@ -215,13 +246,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410E3F4423C5B46100549F94 /* CardViewController.m in Sources */,
 				410414EC23C4B3E600140FDF /* LabelView.m in Sources */,
 				4132E23723C3559A0017F94F /* ViewController.m in Sources */,
+				4124AE5B23C6BE3B005333DD /* CardCollectionReusableView.m in Sources */,
 				4132E23123C3559A0017F94F /* AppDelegate.m in Sources */,
 				410E3F3C23C579DC00549F94 /* ImageCell.m in Sources */,
 				4132E24223C3559B0017F94F /* main.m in Sources */,
 				410E3F3923C573B400549F94 /* ImageCollectionView.m in Sources */,
 				4132E23423C3559A0017F94F /* SceneDelegate.m in Sources */,
+				410E3F4723C5B53A00549F94 /* CardViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
