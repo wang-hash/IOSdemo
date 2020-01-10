@@ -39,7 +39,7 @@ static CGFloat const ScaleFactor = 0.2;
             CGFloat normalizedDistance = distance / ActiveDistance;
             
             if(ABS(distance) < ActiveDistance){
-                CGFloat zoom = 1+ ScaleFactor * (1- ABS(normalizedDistance));
+                CGFloat zoom = 1 + ScaleFactor * (1- ABS(normalizedDistance));
                 attributes.transform3D = CATransform3DMakeScale(zoom, zoom, 1.0);
                 attributes.zIndex = 1;
                 attributes.alpha = 1.0;
@@ -47,6 +47,10 @@ static CGFloat const ScaleFactor = 0.2;
         }
     }
     return array;
+}
+
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds{
+    return YES;
 }
 
 @end

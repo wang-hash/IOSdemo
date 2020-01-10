@@ -3,6 +3,7 @@
 #import "ImageCollectionView.h"
 #import "CardViewController.h"
 #import "ImageSlideViewController.h"
+#import "SliderViewController.h"
 
 @interface SceneDelegate ()
 
@@ -17,7 +18,14 @@
 //    ImageCollectionView *viewController = [[ImageCollectionView alloc] init];
 //    self.window.backgroundColor = [UIColor whiteColor];
 //    CardViewController *viewController = [[CardViewController alloc] init];
-    ImageSlideViewController *viewController = [[ImageSlideViewController alloc] init];
+    
+    //ImageSlider
+//    ImageSlideViewController *viewController = [[ImageSlideViewController alloc] init];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    self.window.rootViewController = viewController;
+    
+    //Slider
+    SliderViewController *viewController = [[SliderViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = viewController;
     
