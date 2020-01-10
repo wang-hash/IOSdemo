@@ -2,6 +2,7 @@
 #import "ViewController.h"
 #import "ImageCollectionView.h"
 #import "CardViewController.h"
+#import "ImageSlideViewController.h"
 
 @interface SceneDelegate ()
 
@@ -15,7 +16,9 @@
     
 //    ImageCollectionView *viewController = [[ImageCollectionView alloc] init];
 //    self.window.backgroundColor = [UIColor whiteColor];
-    CardViewController *viewController = [[CardViewController alloc] init];
+//    CardViewController *viewController = [[CardViewController alloc] init];
+    ImageSlideViewController *viewController = [[ImageSlideViewController alloc] init];
+    self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = viewController;
     
     [self.window makeKeyAndVisible];
